@@ -1,0 +1,46 @@
+
+<CustLabel@Label>
+    color:0,0,0,1
+
+SampBoxLayout:
+
+<SampBoxLayout>:
+    orientation: "vertical"
+    padding:10
+    spacing:10
+
+    BoxLayout:
+        orientation:"horizontal"
+        size_hint_x: .22
+
+        CustLabel:
+            text:"CO Daniel"
+            size_hint_x: .80
+        CheckBox:
+            on_active: root.checkbox_18_clicked(self, self.active)
+            size_hint_x: .55
+    BoxLayout:
+        orientation:"horizontal"
+        size_hint_x: .55
+
+        CustLabel:
+            text:"OFFICERS"
+            size_hint_x: .265
+
+        CustLabel:
+            text:"CO Daniel"
+            size_hint_x: .15
+        CheckBox:
+            group: "officers"
+            value: root.Officers
+            size_hint_x: .05
+        CustLabel:
+            text:"XO Janet"
+            size_hint_x: .15
+        CheckBox:
+            group: "OFFICERS"
+            value: root.Officers
+            size_hint_x: .05
+        CustLabel:
+            text:"CSE Shouqin"
+            size_hint_x: .15
